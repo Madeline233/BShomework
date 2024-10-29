@@ -1,0 +1,31 @@
+﻿.short ul{display: flex;flex-flow: row nowrap;}
+.short ul li{padding: 6px 12px;}
+.icon-sort1:before {content: "\f00a";}
+.icon-sort2:before {content: "\f00b";}
+.book{border: 1px solid hsl(85, 55%, 50%); padding: 12px;margin: 6px 0px;}
+.book,.book-body{display: flex; flex-flow: row wrap;}
+.book-left{flex: 1;}
+.book-body{flex: 2;}
+.col1{flex: 2;height: 100%;margin: 0px 12px;display: flex;flex-flow: column;}
+.col2{flex: 1;display: flex;flex-flow: column;justify-content:space-around;align-items: center;}
+.col1 h3,.col1 h4,.col1 h5{text-align: center;margin-bottom: 18px;}
+.col1 h4{background-color: hsla(85, 55%, 50%,0.4);color: hsl(150, 40%, 30%); padding:6px;}
+.col2 .btn-cart{background-color: hsl(150, 40%, 30%);color: hsl(0,100%,100%);padding: 6px 12px; border-radius:20px;}
+.col2 .btn-cart .icon-cart{color: hsl(0,100%,100%);}
+.icon-star:before {content: "\f005";}
+.icon-star{font-size: 1rem;color:hsl(40,95%,70%)}
+.checkbox,.rating{margin: 12px;}
+.checkbox li,.rating li{margin: 6px 0px;}
+.pagination{display: flex;flex-flow: row nowrap;margin: 6px 0px;}
+.pagination li{margin: 1px;background-color:hsla(85, 55%, 50%,0.4) ; width: 30px;height: 30px;text-align: center;display: flex;justify-content: center; align-items: center;}
+#browser{margin-top: 18px;}
+#browser .content{margin-top: 6px;}
+.styled:checked{outline: hsl(85, 55%, 50%) 1px solid;}
+.styled:checked +label{color: hsl(85, 55%, 50%);}
+@media screen and (max-width: 720px){
+   .book-body{flex-flow: column wrap;}
+   .book-left img{height: 50%;}
+}
+@media screen and (max-width: 360px){
+   .book{flex-flow: column wrap;}
+}
