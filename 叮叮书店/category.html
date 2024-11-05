@@ -1,66 +1,63 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>图书分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>叮叮书店</title>
     <meta name="keywords" content="网上书店,计算机,前端技术">
     <meta name="description" content="叮叮书店是销售信息技术及相关图书的垂直网站">
     <meta name="robots" content="index,follow">
     <link rel="icon" href="../叮叮书店/叮叮书店素材/图片素材/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <style>
-        nav ul li:nth-child(2) {
-            background-color: hsl(85, 55%, 50%);
-        }
-        @media screen and (max-width: 360px) {
-            #main-content-top {display: none;}
-        }
-    </style>
 </head>
+
 <body>
-    <div id="top-advert" class="center"><a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/top-advert.jpg" alt=""></a></div>
+    <div id="top-advert" class="center">
+        <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/top-advert.jpg" alt="广告"></a>
+    </div>
     <div id="sticky">
         <div class="full-width" id="top">
             <header id="page-top" class="center">
                 <div id="logo">
-                    <a href="#.">
-                        <img src="../叮叮书店/叮叮书店素材/图片素材/logo.png" alt="叮叮书店">
-                    </a>
+                    <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/logo.png" alt="叮叮书店"></a>
                 </div>
                 <div id="search">
                     <form action="index.html" method="get">
-                        <input type="search" placeholder="站内搜索"><input type="submit" value="搜索">
+                        <input type="search" placeholder="站内搜索" class="search"><input type="submit" value="搜索">
                     </form>
                 </div>
                 <div id="cart">
                     <ul>
-                        <li id="cart-position">
-                            <a href="cart.html" class="cart-head">
-                                <span class="icon-cart"></span><sup>2</sup>
-                            </a>
+                        <ii id="cart-position">
+                            <a href="cart.html" class="cart-head"><span class="icon-cart"></span><sup>2</sup></a>
                             <ul id="dropdown-cart">
                                 <li>
-                                    <div class="cart-thumb"> <a href="#."> <img src="../叮叮书店/叮叮书店素材/图片素材/recommend3.jpg" alt="">
-                                        </a> </div>
-                                    <div class="cart-tittle"> <a href="#.">Spring Boot开发实战</a><br> <span>29.90 x
-                                            1</span>
+                                    <div class="cart-thumb">
+                                        <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/recommend3.jpg"
+                                                alt="SpringBoot开发实战"></a>
                                     </div>
+                                    <cart class="tittle">
+                                        <a href="#.">Spring Boot开发实战</a><br><span>29.90 * 1</span>
+                                    </cart>
                                 </li>
                                 <li>
-                                    <div class="cart-thumb"> <a href="#."> <img src="../叮叮书店/叮叮书店素材/图片素材/new2.jpg" alt="">
-                                        </a> </div>
-                                    <div class="cart-tittle"> <a href="#.">Kubernetes权威指南</a><br> <span>84.60 x 1</span>
+                                    <div class="cart-thumb">
+                                        <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/new2.jpg" alt="Kubernetes权威指南"></a>
                                     </div>
+                                    <cart class="tittle">
+                                        <a href="#.">Kubernetes权威指南</a><br><span>84.60 * 1</span>
+                                    </cart>
                                 </li>
-                                <li id="btn-cart"> <a href="cart.html">去购物车</a> </li>
+                                <li id="btn-cart"><a href="cart.html">去购物车</a></li>
                             </ul>
-                        </li>
+                        </ii>
                     </ul>
                 </div>
             </header>
         </div>
+        <!--导航菜单-->
         <nav class="center">
             <ul>
                 <li><a href="index.html">首页</a></li>
@@ -79,12 +76,11 @@
             </ul>
         </nav>
     </div>
-    <main class="center"> 
+    <!--内容-->
+    <main class="center">
         <header id="main-content-top">
             <section id="classify">
-                <h3>
-                    <span class="icon-classify"></span>图书分类
-                </h3>
+                <h3><span class="icon-classify"></span>图书分类</h3>
                 <ul>
                     <li>编程语言
                         <ul>
@@ -103,7 +99,8 @@
                             <li><a href="#.">Oracle</a></li>
                         </ul>
                     </li>
-                    <li><a href="#.">人工智能</a>
+                    <li>人工智能
+
                     </li>
                     <li>网页制作
                         <ul>
@@ -120,151 +117,152 @@
                 <dl>
                     <dt><a href="#." id="a1">1</a><a href="#." id="a2">2</a><a href="#." id="a3">3</a><a href="#."
                             id="a4">4</a><a href="#." id="a5">5</a></dt>
-                    <dd><a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/b-ad1.jpg" id="b-ad" alt="广告" /></a></dd>
+                    <dd><a href="#."></a><img src="../叮叮书店/叮叮书店素材/图片素材/b-ad1.jpg" alt="广告" id="b-ad"></dd>
                 </dl>
+                <!-- 此处的emmet语法：dl>dt>a[href="#."]#a$*5{$}^dd>a[href="#."]+img[src="../叮叮书店/叮叮书店素材/图片素材/b-ad5.jpg" id="b-ad" alt="广告"] -->
             </div>
             <div id="user-news">
                 <section id="user">
-                    <div id="date-time">2020年02月24日 星期一 15:20:20</div>
+                    <div id="date-time">2024年9月19日星期四 11:17:34</div>
                     <h3>Hi~欢迎逛叮叮！</h3>
                     <div><a href="#." class="login">登录</a> | <a href="#." class="login">注册</a></div>
-                    <div><a href="#." id="btn-new">新人福利</a> <a href="#." id="btn-vip">VIP会员</a></div>
+                    <div><a href="#." class="btn-new">新人福利</a> <a href="#." class="btn-vip">VIP会员</a></div>
                 </section>
                 <section id="news">
                     <div>
                         <h4>叮叮快报</h4>
+                        <ul>
+                            <li><a href="#.">清华大学出版社面向全社会开放资源一览</a></li>
+                            <li><a href="#.">抗击新冠肺炎应急手册出版</a></li>
+                            <li><a href="#.">教育部倡议全国大学生“停学不停课”</a></li>
+                            <li><a href="#.">50万图书折半促销</a></li>
+                            <li><a href="#.">《Web前端设计从入门到实战》限时免费</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a href="#.">清华大学出版社面向全社会开放资源一览</a></li>
-                        <li><a href="#.">抗击新冠肺炎应急手册出版</a></li>
-                        <li><a href="#.">教育部倡议全国大学生“停学不停课”</a></li>
-                        <li><a href="#.">50万图书折半促销</a></li>
-                        <li><a href="#.">《Web前端设计从入门到实战》限时免费</a></li>
-                    </ul>
                 </section>
             </div>
         </header>
-        <section class="crumb-nav">您现在的位置：<a href="index.html">首页</a> &gt; 图书分类</section>
         <div id="main-content">
             <div id="main-content-left">
-                <div class="short">
-                    <h3>图书分类</h3>
-                    <ul>
-                        <li>
-                            <p>第 1–12 条 共 756 条记录</p>
-                        </li>
-                        <li>
-                            <select class="selectpicker">
-                                <option>默认排序</option>
-                                <option>按销量排序</option>
-                                <option>按价格排序</option>
-                            </select>
-                        </li>
-                        <li> <a href="#."><span class="icon-sort1"></span></a> <a href="#."><span
-                                    class="icon-sort2"></span></a> </li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <div class="book">
-                        <div class="book-left">
-                            <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/cover.jpg" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <div class="col1">
-                                <a href="details.html">
-                                    <h3>Web前端设计从入门到实战————HTML5、CSS3、JavaScript项目案例开发（第2版）</h3>
-                                </a>
-                                <h5>张树明 著</h5>
-                                <h4 class="tag">编辑推荐</h4>
-                                <p>本书基于Web标准和响应式Web设计思想深入浅出地介绍了Web前端设计技术的基础知识，对Web体系结构、HTML5、CSS3、JavaScript和网站制作流程进行了详细的讲解，内容翔实，结构合理，语言精练，表达简明，实用性强，易于自学。
-                                </p>
+                <section id="recommend-book">
+                    <div class="title">
+                        <h3><a href="#." class="main-content-cart"><span class="icon-book"></span></a>本周推荐</h3><a
+                            href="#.">查看更多<div class="title-cover"></div></a>
+                    </div>
+                    <div class="content">
+                        <div class="content-item">
+                            <div class="recommend-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend1.jpg"
+                                        alt="Web前端设计从入门到实战"></a>
+                                <h3>Web前端设计从入门到实战</h3>
+                                <span>单价：￥69.60</span>
+                                <span class="icon-cart"></span>
+                                <div class="description-text">
+                                    <p>
+                                        本书基于Web标准和响应式Web设计思想深入浅出地介绍了Web前端设计技术的基础知识，对Web体系结构、HTML5、CSS3、JavaScript和网站制作流程进行了详细的讲解，内容翔实，结构合理，语言精练，表达简明，实用性强，易于自学。
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col2">
-                                <div class="price">单价：¥69.60</div>
-                                <div>是否现货：现货</div>
-                                <div>出版社：清华大学出版社</div>
-                                <a href="#." class="btn-cart"><span class="icon-cart"></span>加入购物车</a>
-                                <div><span class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span>&nbsp;&nbsp;5 评论</div>
+                        </div>
+                        <div class="content-item">
+                            <div class="recommend-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend2.jpg"
+                                        alt="最强Android架构大剖析"></a>
+                                <h3>最强Android架构大剖析</h3>
+                                <span>单价：￥84.60</span>
+                                <span class="icon-cart"></span>
+                                <div class="description-text">
+                                    <p>
+                                        本书作者以研究操作系统并从事相关培训工作为生，是业内著名的操作系统专家，著有多本操作系统的畅销书。本书是他针对Android系统写的第一本书。根据以往读者的反馈，在本书的内容上摒弃了以源代码讲解的方式，而改用实验的方法。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="recommend-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend3.jpg"
+                                        alt="Spring Boot开发实战"></a>
+                                <h3>Spring Boot开发实战</h3>
+                                <span>单价：￥29.90</span>
+                                <span class="icon-cart"></span>
+                                <div class="description-text">
+                                    <p>
+                                        SpringBoot致力于简化开发配置并为企业级开发提供一系列非业务性功能，而Vue则采用数据驱动视图的方式将程序员从烦琐的DOM操作中解救出来。利用SpringBoot+Vue，我们可以快速开发出大型SPA应用。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="recommend-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend4.jpg"
+                                        alt="深入理解Java虚拟机"></a>
+                                <h3>深入理解Java虚拟机</h3>
+                                <span>单价：￥122.60</span>
+                                <span class="icon-cart"></span>
+                                <div class="description-text">
+                                    <p>
+                                        这是一部从工作原理和工程实践两个维度深入剖析JVM的著作，是计算机领域公认的经典，繁体版在台湾也颇受欢迎。自2011年上市以来，前两个版本累计印刷36次，销量超过30万册，两家主要网络书店的评论近90000条，内容上近乎零差评，是原创计算机图书领域不可逾越的丰碑。
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="book">
-                        <div class="book-left">
-                            <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend4.jpg" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <div class="col1">
-                                <a href="details.html">
-                                    <h3>深入理解Java虚拟机</h3>
-                                </a>
-                                <h5>周志明 著</h5>
-                                <h4 class="tag">编辑推荐</h4>
-                                <p>这是一部从工作原理和工程实践两个维度深入剖析JVM的著作，是计算机领域公认的经典，繁体版在台湾也颇受欢迎。自2011年上市以来，前两个版本累计印刷36次，销量超过30万册，两家主要网络书店的评论近90000条，内容上近乎零差评，是原创计算机图书领域不可逾越的丰碑。
-                                </p>
-                            </div>
-                            <div class="col2">
-                                <div class="price">单价：¥35.00</div>
-                                <div>是否现货：现货</div>
-                                <div>出版社：机械工业出版社</div>
-                                <a href="#." class="btn-cart"><span class="icon-cart"></span>加入购物车</a>
-                                <div><span class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span>&nbsp;&nbsp;5 评论</div>
-                            </div>
-                        </div>
+                </section>
+                <section id="new-book">
+                    <div class="title">
+                        <h3><a href="#." class="main-content-cart"><span class="icon-new"></span></a>最近新书</h3>查看更多<div
+                            class="title-cover"></div>
                     </div>
-                    <div class="book">
-                        <div class="book-left">
-                            <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/recommend2.jpg" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <div class="col1">
-                                <a href="details.html">
-                                    <!-- 此处课本重复，推测为写错了 -->
-                                    <h3>深入理解Java虚拟机</h3>
-                                </a>
-                                <h5>周志明 著</h5>
-                                <h4 class="tag">编辑推荐</h4>
-                                <p>这是一部从工作原理和工程实践两个维度深入剖析JVM的著作，是计算机领域公认的经典，繁体版在台湾也颇受欢迎。自2011年上市以来，前两个版本累计印刷36次，销量超过30万册，两家主要网络书店的评论近90000条，内容上近乎零差评，是原创计算机图书领域不可逾越的丰碑。
-                                </p>
-                            </div>
-                            <div class="col2">
-                                <div class="price">单价：¥35.00</div>
-                                <div>是否现货：现货</div>
-                                <div>出版社：机械工业出版社</div>
-                                <a href="#." class="btn-cart"><span class="icon-cart"></span>加入购物车</a>
-                                <div><span class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span><span class="icon-star"></span><span
-                                        class="icon-star"></span>&nbsp;&nbsp;5 评论</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="pagination">
-                    <li><a href="#.">&lt;</a></li>
-                    <li><a href="#.">1</a></li>
-                    <li><a href="#.">2</a></li>
-                    <li><a href="#.">3</a></li>
-                    <li><a href="#.">&gt;</a></li>
-                </ul>
-                <section id="browser">
-                    <h3>最近浏览</h3>
                     <div class="content">
                         <div class="content-item">
                             <span class="mark">新</span>
                             <div class="new-description">
-                                <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/new1.jpg" alt=""></a>
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/new1.jpg" alt="动手学深度学习"></a>
                                 <h3>动手学深度学习</h3>
                                 <span>单价：￥84.50</span>
                                 <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
                             </div>
                         </div>
                         <div class="content-item">
+                            <span class="mark">新</span>
+                            <div class="new-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/new2.jpg" alt="Kubernetes权威指南"></a>
+                                <h3>Kubernetes权威指南</h3>
+                                <span>单价：￥84.60</span>
+                                <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <span class="mark">新</span>
+                            <div class="new-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/new3.jpg" alt="深入浅出Webpack"></a>
+                                <h3>深入浅出Webpack</h3>
+                                <span>单价：￥75.10</span>
+                                <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <span class="mark">新</span>
+                            <div class="new-description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/new4.jpg"
+                                        alt="网页设计与网站建设从入门到精通"></a>
+                                <h3>网页设计与网站建设从入门到精通</h3>
+                                <span>单价：￥44.90</span>
+                                <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="sales-book">
+                    <div class="title"></div>
+                    <h3><a href="#." class="main-content-cart"><span class="icon-sale"></span></a>最近促销</h3>查看更多<div
+                        class="title-cover"></div>
+                    <div class="content">
+                        <div class="content-item">
                             <span class="mark1">50%</span>
                             <div class="description">
-                                <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/sale1.jpg" alt=""></a>
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/sale1.jpg"
+                                        alt="轻松学习Python数据分析"></a>
                                 <h3>轻松学习Python数据分析</h3>
                                 <span>现价：￥28.05</span>
                                 <span>原价：<del>￥56.10</del></span>
@@ -274,7 +272,7 @@
                         <div class="content-item">
                             <span class="mark1">90%</span>
                             <div class="description">
-                                <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/sale2.jpg" alt=""></a>
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/sale2.jpg" alt="SQL即查即用"></a>
                                 <h3>SQL即查即用</h3>
                                 <span>现价：￥4.58</span>
                                 <span>原价：<del>￥45.80</del></span>
@@ -282,11 +280,22 @@
                             </div>
                         </div>
                         <div class="content-item">
-                            <span class="mark">新</span>
-                            <div class="new-description">
-                                <a href="#."><img src="../叮叮书店/叮叮书店素材/图片素材/new2.jpg" alt=""></a>
-                                <h3>Kubernetes权威指南</h3>
-                                <span>单价：￥84.60</span>
+                            <span class="mark1">10%</span>
+                            <div class="description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/sale3.jpg" alt="移动开发架构设计实战"></a>
+                                <h3>移动开发架构设计实战</h3>
+                                <span>现价：￥75.90</span>
+                                <span>原价：<del>￥84.60</del></span>
+                                <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <span class="mark1">20%</span>
+                            <div class="description">
+                                <a href="details.html"><img src="../叮叮书店/叮叮书店素材/图片素材/sale4.jpg" alt="机器学习基础"></a>
+                                <h3>机器学习基础</h3>
+                                <span>现价：￥72.00</span>
+                                <span>原价：<del>￥90.00</del></span>
                                 <a href="#." class="main-content-cart"><span class="icon-cart"></span></a>
                             </div>
                         </div>
@@ -294,75 +303,94 @@
                 </section>
             </div>
             <aside>
-                <h4>分类</h4>
-                <div class="checkbox">
+                <section id="best-selling">
+                    <div class="title">
+                        <h3><span class="icon-sell"></span>畅销图书</h3>
+                    </div>
                     <ul>
-                        <li>
-                            <input id="cate1" class="styled" type="checkbox">
-                            <label for="cate1">编程语言</label>
+                        <li>深度学习 [deep learning]
+                            <div class="curr">
+                                <a href="#.">
+                                    <div class="p-img"><img src="../叮叮书店/叮叮书店素材/图片素材/selling1.jpg"
+                                            alt="深度学习 [deep learning]"></div>
+                                    <div class="p-name">深度学习 [deep learning]<strong>￥43.50</strong>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li>
-                            <input id="cate2" class="styled" type="checkbox">
-                            <label for="cate2">大数据</label>
+                        <li>Hadoop权威指南：大数据的存储与分析(第4版)，累计销量超过10万册
+                            <div class="curr">
+                                <a href="#.">
+                                    <div class="p-img"><img src="../叮叮书店/叮叮书店素材/图片素材/selling2.jpg"
+                                            alt="Hadoop权威指南：大数据的存储与分析(第4版)，累计销量超过10万册"></div>
+                                    <div class="p-name">Hadoop权威指南：大数据的存储与分析(第4版)，累计销量超过10万册<strong>￥43.50</strong>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li>
-                            <input id="cate3" class="styled" type="checkbox">
-                            <label for="cate3">人工智能</label>
+                        <li>和秋叶一起学PPT 第3版
+                            <div class="curr">
+                                <a href="#.">
+                                    <div class="p-img"><img src="../叮叮书店/叮叮书店素材/图片素材/selling3.jpg" alt="和秋叶一起学PPT 第3版">
+                                    </div>
+                                    <div class="p-name">和秋叶一起学PPT 第3版<strong>￥43.50</strong>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li>
-                            <input id="cate4" class="styled" type="checkbox">
-                            <label for="cate4">网页制作</label>
+                        <li>深度学习优化与识别
+                            <div class="curr">
+                                <a href="#.">
+                                    <div class="p-img"><img src="../叮叮书店/叮叮书店素材/图片素材/selling4.jpg" alt="深度学习优化与识别">
+                                    </div>
+                                    <div class="p-name">深度学习优化与识别<strong>￥43.50</strong>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li>
-                            <input id="cate5" class="styled" type="checkbox">
-                            <label for="cate5">图形图像</label>
+                        <li>区块链原理、设计与应用
+                            <div class="curr">
+                                <a href="#.">
+                                    <div class="p-img"><img src="../叮叮书店/叮叮书店素材/图片素材/selling5.jpg" alt="区块链原理、设计与应用">
+                                    </div>
+                                    <div class="p-name">区块链原理、设计与应用<strong>￥43.50</strong>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <h4>出版社专区</h4>
-                <div class="checkbox">
+                </section>
+                <section id="partner">
+                    <div class="title">
+                        <h3><span class="icon-partner"></span>合作伙伴</h3>
+                    </div>
                     <ul>
-                        <li>
-                            <input id="brand1" class="styled" type="checkbox">
-                            <label for="brand1">清华大学出版社<span>(217)</span> </label>
-                        </li>
-                        <li>
-                            <input id="brand2" class="styled" type="checkbox">
-                            <label for="brand2">机械工业出版社<span>(79)</span> </label>
-                        </li>
-                        <li>
-                            <input id="brand3" class="styled" type="checkbox">
-                            <label for="brand3">北京大学出版社<span>(283)</span> </label>
-                        </li>
-                        <li>
-                            <input id="brand4" class="styled" type="checkbox">
-                            <label for="brand4">辽宁人民出版社<span>(79)</span> </label>
-                        </li>
-                        <li>
-                            <input id="brand5" class="styled" type="checkbox">
-                            <label for="brand5">北方出版社<span>(283)</span> </label>
-                        </li>
+                        <li><a href="#.">中国电子商务研究中心</a></li>
+                        <li><a href="#.">清华大学出版社</a></li>
+                        <li><a href="#.">中国人民大学出版社</a></li>
+                        <li><a href="#.">中国社会科学出版社</a></li>
+                        <li><a href="#.">机械工业出版社</a></li>
                     </ul>
-                </div>
-                <h4>评定等级</h4>
-                <div class="rating">
-                    <ul>
-                        <li><a href="#."><span class="icon-star"></span><span class="icon-star"></span><span
-                                    class="icon-star"></span><span class="icon-star"></span><span
-                                    class="icon-star"></span>&nbsp;&nbsp;(218)</a></li>
-                        <li><a href="#."><span class="icon-star"></span><span class="icon-star"></span><span
-                                    class="icon-star"></span><span class="icon-star"></span>&nbsp;&nbsp;(21)</a></li>
-                        <li><a href="#."><span class="icon-star"></span><span class="icon-star"></span><span
-                                    class="icon-star"></span>&nbsp;&nbsp;(18)</a></li>
-                        <li><a href="#."><span class="icon-star"></span><span
-                                    class="icon-star"></span>&nbsp;&nbsp;(9)</a></li>
-                        <li><a href="#."><span class="icon-star"></span>&nbsp;&nbsp;(2)</a></li>
-                    </ul>
-                </div>
+                </section>
+                <section id="about">
+                    <div class="title">
+                        <h3><span class="icon-about"></span>关于书店</h3>
+                    </div>
+                    <div class="content">
+                        <img src="../叮叮书店/叮叮书店素材/图片素材/about-bookstore.jpg" alt="叮叮书店">
+                        <p>叮叮书店成立于2020年6月，是由教育部主管，清华大学主办的综合书店。</p>
+                    </div>
+                </section>
             </aside>
         </div>
     </main>
     <div class="full-width">
+        <!--页脚-->
         <footer class="center">
             <div class="col">
                 <h4>购物指南</h4>
@@ -375,7 +403,7 @@
             <div class="col">
                 <h4>配送方式</h4>
                 <ul>
-                    <li><a href="fingerGuessing.html">上门自提</a></li>
+                    <li><a href="#.">上门自提</a></li>
                     <li><a href="#.">限时达</a></li>
                 </ul>
             </div>
@@ -396,12 +424,13 @@
         </footer>
     </div>
     <div id="copyright" class="center">
-        <div>Copyright&copy;2020-2028 <a href="index.html">叮叮书店</a> 版权所有 | 京ICP证000001号音像制品经营许可证
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img src="../叮叮书店/叮叮书店素材/图片素材/vcss.gif" alt="Valid CSS!">
-            </a>
+        <div>
+            Copyright©2020-2028 <a href="index.html">叮叮书店</a> 版权所有 | 京ICP证000001号音像制品经营许可证
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="../叮叮书店/叮叮书店素材/图片素材/vcss.gif"
+                    alt="Valid CSS!"></a>
         </div>
-        <address>通讯地址：清华大学学研大厦A座&nbsp;&nbsp;电话：（010）00000000&nbsp;&nbsp;网管信箱：netadmin@tup.tsinghua.edu.cn
+        <address>
+            通讯地址：清华大学学研大厦A座 电话：（010）00000000 网管信箱：netadmin@tup.tsinghua.edu.cn
         </address>
     </div>
 </body>
